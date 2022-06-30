@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: hsl(215, 51%, 70%);
+    --secondary-color: hsl(178, 100%, 50%);
+
+    --mainBg: hsl(217, 54%, 11%);
+    --shadow: hsla(216, 65%, 9%, 0.616);
+    --cardBg: hsl(216, 50%, 16%);
+    --cardLine:hsl(215, 32%, 27%);
+    --cardText: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --main-font: 'Outfit', sans-serif;
+}
+
+body {
+    background: var(--mainBg);
+    max-width: 1440px;
+    font-family: var(--main-font);
+    color: var(--white);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    background-color: var(--cardBg);
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px 10px var(--shadow);
+}
+
+.nft-image {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.nft-image:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nft-image img { 
+    z-index: 1;
+    position: absolute;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.card-image h2 {
+    padding-top: 10px;
+}
+
+.card-image a {
+    color: var(--white);
+    transition: 0.2s ease-in-out;
+}
+
+.card-image a:hover {
+    color: var(--secondary-color);
+}
+
+.card-info {
+    color: var(--primary-color);
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+.card-db {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-db span {
+    display: flex;
+}
+
+.card-db img {
+    padding-left: 90px;
+}
+
+.line {
+    border-bottom: 1px solid var(--cardLine);
+    margin: 20px 0px; 
+}
+
+.user {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.user img {
+    width: 10%;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.user span {
+    padding-left: 15px;
+}
+
+.user a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.user a:hover {
+    color: var(--secondary-color);
+}
+
+.attribution {
+    margin-top: 30px;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--cardLine);
+}
+
