@@ -17,7 +17,7 @@ a {
     --mainBg: hsl(217, 54%, 11%);
     --shadow: hsla(216, 65%, 9%, 0.616);
     --cardBg: hsl(216, 50%, 16%);
-    --cardLine:hsl(215, 32%, 27%);
+    --cardLine: hsl(215, 32%, 27%);
     --cardText: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
 
@@ -64,7 +64,7 @@ body {
     cursor: pointer;
 }
 
-.nft-image img { 
+.nft-image img {
     z-index: 1;
     position: absolute;
 }
@@ -111,7 +111,7 @@ body {
 
 .line {
     border-bottom: 1px solid var(--cardLine);
-    margin: 20px 0px; 
+    margin: 20px 0px;
 }
 
 .user {
@@ -143,8 +143,7 @@ body {
 
 .attribution {
     margin-top: 30px;
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 11px;
+    text-align: center;
     color: var(--cardLine);
 }
-
